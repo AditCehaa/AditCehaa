@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Little Story 🤍</title>
+<meta name="description" content="Sebuah cerita kecil tentang perjalanan kita.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+  --bg:#fffaf8;
+  --text:#493b3b;
+  --soft:#9b7770;
+  --accent:#c98f87;
+  --card:#ffffffd9;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Poppins,Arial,sans-serif;
+  line-height:1.8;
+}
+section{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:70px 20px;
+  position:relative;
+  overflow:hidden;
+}
+.container{width:min(940px,100%); margin:auto; text-align:center}
+.kicker{
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:11px;
+  color:var(--soft);
+  margin-bottom:12px;
+}
+h1,h2{
+  font-family:"DM Serif Display",Georgia,serif;
+  font-weight:400;
+  line-height:1.15;
+  margin:0 0 20px;
+}
+h1{font-size:clamp(42px,9vw,78px)}
+h2{font-size:clamp(34px,6vw,54px)}
+p{font-size:15px; max-width:720px; margin:0 auto}
+.hero{
+  background:
+    radial-gradient(circle at 20% 20%, #f6ddd8 0 10%, transparent 30%),
+    radial-gradient(circle at 85% 75%, #ead8d2 0 8%, transparent 28%),
+    var(--bg);
+}
+.hero .heart{font-size:42px; margin-bottom:18px; animation:pulse 1.8s infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}
+.scroll{
+  margin-top:35px;
+  color:var(--soft);
+  font-size:12px;
+  letter-spacing:2px;
+}
+.photo-section{background:#f6eeeb}
+.photo-wrap{
+  width:min(720px,100%);
+  margin:0 auto 30px;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 18px 55px #5a40301c;
+  background:#fff;
+}
+.photo-wrap img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:78vh;
+  object-fit:cover;
+}
+.caption{
+  background:#fff;
+  padding:22px 24px 25px;
+}
+.caption p{color:#665656}
+.final{
+  background:linear-gradient(135deg,#fff8f5,#f0dfdb);
+}
+.final .photo-wrap{margin-bottom:28px}
+.quote{
+  font-family:"DM Serif Display",Georgia,serif;
+  font-size:clamp(24px,4vw,36px);
+  font-style:italic;
+  max-width:760px;
+}
+.btn{
+  display:inline-block;
+  margin-top:28px;
+  padding:12px 25px;
+  border-radius:999px;
+  background:var(--accent);
+  color:white;
+  text-decoration:none;
+  font-size:13px;
+  letter-spacing:.5px;
+}
+.divider{
+  width:55px;height:1px;background:#caa39d;margin:25px auto;
+}
+.small{font-size:12px;color:var(--soft)}
+.fade{animation:fadeUp .9s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@media(max-width:600px){
+  section{padding:55px 15px}
+  .photo-wrap{border-radius:18px}
+  p{font-size:14px}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container fade">
+    <div class="heart">🤍</div>
+    <div class="kicker">A little story about us</div>
+    <h1>Untukmu,<br>Awal dari Sebuah Perjalanan</h1>
+    <div class="divider"></div>
+    <p>
+      Mungkin kita tak tahu ke mana perjalanan ini akan membawa kita,
+      tapi aku ingin setiap langkahnya kita jalani bersama.
+      Semoga ini menjadi awal dari banyak cerita indah tentang <b>kita</b>.
+    </p>
+    <div class="scroll">SCROLL PELAN-PELAN ↓</div>
+  </div>
+</section>
+
+<section class="photo-section">
+  <div class="container">
+    <div class="photo-wrap">
+      <img src="01_masa_kecil.jpg" alt="Masa kecil">
+      <div class="caption">
+        <div class="kicker">Before I knew you</div>
+        <h2>Sebelum Mengenalmu</h2>
+        <p>
+          Sebelum mengenal kamu, ada seorang anak kecil yang hanya tahu tentang
+          dunia sederhananya—tersenyum, bermain, dan menjalani hari tanpa tahu
+          bahwa suatu saat nanti akan bertemu seseorang yang begitu berarti.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="photo-wrap">
+      <img src="02_awal_perjalanan.jpg" alt="Awal perjalanan kita">
+      <div class="caption">
+        <div class="kicker">Where our story began</div>
+        <h2>Di Sore Itu</h2>
+        <p>
+          Di suatu sore yang indah, ditemani suara ombak dan luasnya pantai,
+          tanpa kita sadari di sinilah salah satu halaman pertama dari cerita
+          cinta kita dimulai. Sederhana, tapi menjadi momen yang selalu ingin
+          aku ingat, karena sejak hari itu ada kamu dan aku yang perlahan mulai
+          menulis perjalanan kita bersama.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="photo-section">
+  <div class="container">
+    <div class="photo-wrap">
+      <img src="03_lika_liku.jpg" alt="Lika-liku perjalanan kita">
+      <div class="caption">
+        <div class="kicker">Our ups & downs</div>
+        <h2>Tentang Kita</h2>
+        <p>
+          Perjalanan kita ternyata tidak selalu tentang tawa dan bahagia.
+          Ada susah, sedih, marah, kecewa, dan berbagai lika-liku yang pernah
+          kita lewati bersama. Tapi justru dari semua itu, cerita kita menjadi
+          semakin berarti, karena kita belajar untuk saling memahami,
+          memaafkan, dan tetap bertahan.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="photo-wrap">
+      <img src="04_tumbuh_bersama.jpg" alt="Tumbuh bersama">
+      <div class="caption">
+        <div class="kicker">Still choosing you</div>
+        <h2>Masih Bersama</h2>
+        <p>
+          Setelah semua tawa, air mata, perdebatan, dan kebahagiaan yang kita
+          bagi, aku sadar bahwa perjalanan ini bukan tentang menjadi sempurna.
+          Ini tentang dua orang yang terus belajar untuk tumbuh dan berjalan
+          bersama, meski jalannya tidak selalu mudah.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="container">
+    <div class="photo-wrap">
+      <img src="05_untuk_selamanya.jpg" alt="Salah satu kenangan kita">
+    </div>
+    <div class="kicker">For the days ahead</div>
+    <div class="quote">
+      “Aku tidak tahu seperti apa halaman-halaman berikutnya,
+      tapi aku berharap namamu tetap ada di dalam setiap ceritanya.”
+    </div>
+    <p style="margin-top:22px">
+      Semoga ke depannya kita bisa melewati lebih banyak hal dengan hati yang
+      lebih kuat, menciptakan lebih banyak kenangan, dan tetap saling memilih
+      dalam keadaan apa pun.
+    </p>
+    <a class="btn" href="#start" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Kembali ke awal 🤍</a>
+    <div class="small" style="margin-top:25px">Let’s begin our journey. ❤️</div>
+  </div>
+</section>
+
+</body>
+</html>
